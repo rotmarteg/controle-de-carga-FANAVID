@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Gestor de Carregamento</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h2>Calculador de Eficiência</h2>
+
+<div class="tabs">
+<button class="tab-btn active" onclick="mostrarAba('aba-caminhao')">Veículo</button>
+<button class="tab-btn" onclick="mostrarAba('aba-caixas')">Carga</button>
+</div>
+
+<div id="aba-caminhao" class="tab-content" style="display: block;">
+<h3>Dimensões do Caminhão (m)</h3>
+<input type="number" id="cam-comp" step="any" placeholder="Comprimento (ex: 6.5)">
+<input type="number" id="cam-larg" step="any" placeholder="Largura (ex: 2.4)">
+<input type="number" id="cam-alt" step="any" placeholder="Altura (ex: 2.5)">
+</div>
+
+<div id="aba-caixas" class="tab-content" style="display: none;">
+<h3>Dados da Carga</h3>
+<label>Dimensões da Caixa (m):</label>
+<div class="row">
+<input type="number" id="caixa-comp" step="any" placeholder="Comp. (ex: 0.8)">
+<input type="number" id="caixa-larg" step="any" placeholder="Larg.">
+<input type="number" id="caixa-alt" step="any" placeholder="Alt.">
+</div>
+<hr>
+<label>Quantidade que deseja enviar:</label>
+<input type="number" id="qtd-desejada" placeholder="Ex: 72">
+</div>
+<button id="btn-analisar" onclick="analisarEficiencia()">Analisar Eficiência</button>
+
+<div id="resultado"></div>
+
+<div class="action-buttons">
+<button id="btn-salvar" class="secondary-btn" onclick="salvarRelatorio()">
+<span>💾</span> Salvar (.txt)
+</button>
+<button id="btn-limpar" class="secondary-btn" onclick="limparCampos()">
+<span>🔄</span> Nova Análise
+</button>
+</div>
+
+</div> ```
+
+
+</div> </div> <script src="app.js"></script>
+</body>
+</html>
+
+
+<script src="app.js"></script>
+</body>
+</html>
